@@ -7,7 +7,6 @@
 
 int main () {
     time_t rawtime;
-    FILE *fp;
 
     if(geteuid() != 0) {
         // Tell user to run app as root, then exit.
@@ -27,7 +26,7 @@ int main () {
             // TODO check that we're connected to wifi
 
             // execute the mighty ntp update command
-            fp = popen("/usr/sbin/ntpdate -vu time.apple.com", "r");
+            popen("/usr/sbin/ntpdate -vu time.apple.com", "r");
 
             // get the time again for more logs
             printf("time is now: %d\n", (int)time(&rawtime));
