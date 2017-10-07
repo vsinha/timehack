@@ -1,4 +1,4 @@
-#timehack
+# timehack
 
 Towards the beginning of 2015 my mac developed this glitch, where it would spontanously lose the current OS-level clock setting and decide the time was December 11th 2013, at around 11:30pm.
 
